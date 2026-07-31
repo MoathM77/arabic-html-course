@@ -330,17 +330,76 @@
 <table border="1">
     <tr>
         <th>الاسم</th>
-        <th>العمر</th>
+        <th>المادة</th>
+        <th>الدرجة</th>
     </tr>
     <tr>
         <td>أحمد</td>
-        <td>25</td>
+        <td colspan="2">رياضيات</td>
     </tr>
     <tr>
-        <td>محمد</td>
-        <td>30</td>
+        <td rowspan="2">محمد</td>
+        <td>علوم</td>
+        <td>95</td>
+    </tr>
+    <tr>
+        <td>انجليزي</td>
+        <td>88</td>
     </tr>
 </table>
+<p>ملاحظة: الحدود الظاهرة في الجدول تمت باستخدام خاصية <code>border="1"</code> في HTML، وهناك طرق حديثة لتنسيق الجداول باستخدام <strong>CSS</strong> سنتعلمها لاحقاً</p>
+
+<hr>
+
+<h2>دمج الخلايا في الجداول</h2>
+<p>تقدر تدمج الخلايا في الجدول باستخدام الخاصيتين <code>colspan</code> و <code>rowspan</code></p>
+<p><code>colspan</code> تدمج خلايا في نفس الصف (أفقي)، و <code>rowspan</code> تدمج خلايا في نفس العمود (عمودي)</p>
+
+<table border="1">
+    <tr>
+        <th>الاسم</th>
+        <th>المادة</th>
+        <th>الدرجة</th>
+    </tr>
+    <tr>
+        <td>أحمد</td>
+        <td colspan="2">رياضيات</td>
+    </tr>
+    <tr>
+        <td rowspan="2">محمد</td>
+        <td>علوم</td>
+        <td>95</td>
+    </tr>
+    <tr>
+        <td>انجليزي</td>
+        <td>88</td>
+    </tr>
+</table>
+
+<p>في المثال الأول: خلية "رياضيات" دمجت خليتين باستخدام <code>colspan="2"</code></p>
+<p>في المثال الثاني: خلية "محمد" دمجت صفين باستخدام <code>rowspan="2"</code></p>
+
+<h2>محاذاة النص داخل الخلايا</h2>
+<p>تقدر تتحكم في مكان النص داخل الخلية باستخدام <code>align</code> و <code>valign</code></p>
+<p><code>align</code> تتحكم في المحاذاة الأفقية (يمين، يسار، وسط)، و <code>valign</code> تتحكم في المحاذاة العمودية (أعلى، وسط، أسفل)</p>
+
+<table border="1">
+    <tr>
+        <th>الاسم</th>
+        <th>الدرجة</th>
+    </tr>
+    <tr>
+        <td align="center">أحمد</td>
+        <td align="right">95</td>
+    </tr>
+    <tr>
+        <td align="center">محمد</td>
+        <td align="right">88</td>
+    </tr>
+</table>
+
+<p>في المثال: "أحمد" في المنتصف، و "95" في اليمين</p>
+<p>ملاحظة: <code>align</code> و <code>valign</code> تعتبر من HTML القديم، والطريقة الحديثة تكون باستخدام <strong>CSS</strong> وسنشرحها لاحقاً</p>
 
 <hr>
 
@@ -355,6 +414,7 @@
     <p><code>&lt;button&gt;</code> لإرسال النموذج</p>
     <button>إرسال</button>
 </form>
+<p>ملاحظة: النماذج تحتاج إلى برمجة خلفية (Backend) عشان تعالج البيانات، وسنتعلمها لاحقاً</p>
 
 <hr>
 
@@ -363,11 +423,12 @@
 
 <h4>الصوت</h4>
 <p><code>&lt;audio controls&gt;&lt;source src="audio.mp3"&gt;&lt;/audio&gt;</code></p>
-<p>يضيف مشغل صوت مع أزرار تحكم</p>
+<p>يضيف مشغل صوت مع أزرار تحكم، لكنه يحتاج ملف صوتي حقيقي عشان يشتغل</p>
 
 <h4>الفيديو</h4>
 <p><code>&lt;video controls width="300"&gt;&lt;source src="video.mp4"&gt;&lt;/video&gt;</code></p>
-<p>يضيف مشغل فيديو مع أزرار تحكم</p>
+<p>يضيف مشغل فيديو مع أزرار تحكم، لكنه يحتاج ملف فيديو حقيقي عشان يشتغل</p>
+<p>ملاحظة: الصوت والفيديو يحتاجان ملفات حقيقية (mp3، mp4) عشان تظهر في المتصفح، وهنا مجرد شرح للوسم</p>
 
 <hr>
 
