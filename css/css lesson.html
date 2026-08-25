@@ -2,133 +2,18 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تعلم CSS من الصفر</title>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f9f9f9;
-            font-family: Arial, sans-serif;
-        }
-        .bismillah {
-            font-family: 'Amiri', serif;
-            font-size: 2.5em;
-            text-align: center;
-            color: #2c3e50;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.15);
-            margin-top: 20px;
-        }
-        code {
-            background-color: #ecf0f1;
-            padding: 2px 6px;
-            border-radius: 4px;
-        }
-        .note {
-            background-color: #f1c40f;
-            padding: 5px;
-            border-radius: 5px;
-        }
-        hr {
-            margin: 30px 0;
-            border: 1px solid #ccc;
-        }
-    </style>
 </head>
 <body>
-
-    <h1 class="bismillah">🌸 بسم الله الرحمن الرحيم 🌸</h1>
-    <p><strong>في هذا الموقع ستتعلم CSS بطريقة تفاعلية ومبسطة، من الصفر حتى الاحتراف.</strong></p>
-
-    <hr>
-
-    <h2>📘 الدرس الأول: ما هي CSS؟</h2>
-    <p>CSS هي لغة التنسيق، تستخدم لتجميل صفحات HTML.</p>
-    <p>تتحكم في الألوان، الخطوط، الخلفيات، الهوامش، والكثير.</p>
-
-    <h3>طرق كتابة CSS</h3>
-    <p>يمكنك كتابة CSS بثلاث طرق:</p>
-    <ol>
-        <li><strong>داخل العنصر (Inline):</strong> باستخدام <code>style</code> داخل الوسم.</li>
-        <li><strong>داخل <code>&lt;head&gt;</code> (Internal):</strong> باستخدام <code>&lt;style&gt;</code>.</li>
-        <li><strong>في ملف منفصل (External):</strong> باستخدام <code>&lt;link&gt;</code>.</li>
-    </ol>
-
-    <h3>أول خاصيتين في CSS</h3>
-    <p><code>color</code> لتغيير لون النص.</p>
-    <p><code>background-color</code> لتغيير لون الخلفية.</p>
-
-    <hr>
-
-    <h2>📘 الدرس الثاني: الألوان في CSS</h2>
-    <p>في هذا الدرس، ستتعلم كيفية التحكم في ألوان النص والخلفية.</p>
-
-    <h3>1. تغيير لون النص باستخدام <code>color</code></h3>
-    <p><span style="color: blue;">هذا النص باللون الأزرق</span></p>
-    <p><span style="color: red;">وهذا باللون الأحمر</span></p>
-
-    <h3>2. تغيير لون الخلفية باستخدام <code>background-color</code></h3>
-    <p style="background-color: lightgray;">هذه الفقرة خلفيتها رمادية فاتحة.</p>
-    <p style="background-color: lightyellow;">وهذه الفقرة خلفيتها صفراء فاتحة.</p>
-
-    <h3>3. طرق كتابة الألوان</h3>
-    <ul>
-        <li><strong>اسم اللون:</strong> مثل <code>red</code>, <code>blue</code>.</li>
-        <li><strong>الرمز السداسي (Hex):</strong> مثل <code>#ff0000</code>, <code>#0000ff</code>.</li>
-        <li><strong>RGB:</strong> مثل <code>rgb(255, 0, 0)</code>.</li>
-    </ul>
-
-    <hr>
-
-    <h2>📘 الدرس الثالث: حجم الخط ونوعه</h2>
-    <p>في هذا الدرس، ستتعلم كيفية التحكم في حجم الخط ونوعه.</p>
-
-    <h3>1. تغيير حجم الخط باستخدام <code>font-size</code></h3>
-    <p style="font-size: 20px;">هذا النص بحجم 20 بكسل.</p>
-    <p style="font-size: 30px;">وهذا بحجم 30 بكسل.</p>
-
-    <h3>2. تغيير نوع الخط باستخدام <code>font-family</code></h3>
-    <p style="font-family: 'Amiri', serif;">هذا النص بخط Amiri.</p>
-    <p style="font-family: 'Courier New', monospace;">وهذا بخط Courier.</p>
-
-    <hr>
-
-    <h2>📘 الدرس الرابع: الهوامش والتباعد</h2>
-    <p>في هذا الدرس، ستتعلم كيفية التحكم في المسافات بين العناصر.</p>
-
-    <h3>1. الهامش الخارجي <code>margin</code></h3>
-    <p style="margin: 20px; background-color: lightblue;">هذه الفقرة لها هامش 20 بكسل.</p>
-
-    <h3>2. الهامش الداخلي <code>padding</code></h3>
-    <p style="padding: 20px; background-color: lightgreen;">هذه الفقرة لها حشوة 20 بكسل.</p>
-
-    <hr>
-
-    <h2>📘 الدرس الخامس: الحدود والظل</h2>
-    <p>في هذا الدرس، ستتعلم كيفية إضافة حدود وظل للعناصر.</p>
-
-    <h3>1. إضافة حدود باستخدام <code>border</code></h3>
-    <p style="border: 2px solid black;">هذه الفقرة لها حدود سوداء.</p>
-
-    <h3>2. إضافة ظل باستخدام <code>box-shadow</code></h3>
-    <p style="box-shadow: 2px 2px 10px rgba(0,0,0,0.3); padding: 10px;">هذه الفقرة لها ظل.</p>
-
-    <hr>
-
-    <h2>📘 الدرس السادس: تنسيق الروابط</h2>
-    <p>في هذا الدرس، ستتعلم كيفية تنسيق الروابط.</p>
-
-    <h3>1. تنسيق الرابط العادي</h3>
-    <a href="#" style="color: #3498db; text-decoration: none;">هذا رابط أزرق بدون خط.</a>
-
-    <h3>2. تنسيق الرابط عند المرور عليه</h3>
-    <a href="#" style="color: #e74c3c; text-decoration: underline;">هذا رابط أحمر مع خط عند المرور عليه.</a>
-
-    <hr>
-
-    <h2>🔚 نهاية دورة CSS</h2>
-    <p>الحمدلله، أكملت شرح أساسيات CSS.</p>
-    <p>القادم بإذن الله: <strong>JavaScript</strong></p>
-    <p>استمر في التطبيق، ولا تنسى تراجع الأكواد اللي كتبتها.</p>
-
+    <h1>بسم الله الرحمن الرحيم</h1>
+<p><strong>في هذا الموقع ستتعلم CSS بطريقة تفاعلية ومبسطة، من الصفر حتى الاحتراف.</strong></p>
+    <p></p>
+    <p>في CSS، يمكنك كتابة الأكواد بثلاث طرق مختلفة:</p>
+<ol>
+    <li>داخل العنصر (Inline)</li>
+    <li>داخل <code>&lt;head&gt;</code>ـ (Internal)</li>
+    <li>في ملف منفصل (External)</li>
+</ol>
+    <p>أنت حر في اختيار الطريقة التي تناسبك</p>
+    <p></p>
 </body>
 </html>
