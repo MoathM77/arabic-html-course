@@ -39,6 +39,33 @@
 &lt;/head&gt;</code></pre>
     <p>في هذا المثال، قمنا بربط ملف CSS خارجي باسم <code>styles.css</code> بالصفحة باستخدام وسم <code>&lt;link&gt;</code> داخل <code>&lt;head&gt;</code>. يمكنك كتابة جميع الأكواد في هذا الملف وتطبيقها على الصفحة.</p>
     <hr>
+    <h2>📘 مقارنة بين طرق كتابة CSS</h2>
+<p>في CSS، كل طريقة لها طريقة مختلفة في الكتابة، ومو كلها تستخدم <code>style</code>.</p>
+
+<table border="1" cellpadding="8">
+    <tr>
+        <th>الطريقة</th>
+        <th>ماذا تستخدم؟</th>
+        <th>ليش؟</th>
+    </tr>
+    <tr>
+        <td>Inline</td>
+        <td><code>style</code> ✅</td>
+        <td>لأنك تكتب CSS مباشرة داخل العنصر، فتحتاج الخاصية <code>style</code> عشان تحدد التنسيق.</td>
+    </tr>
+    <tr>
+        <td>Internal</td>
+        <td><code>&lt;style&gt;</code> ❌</td>
+        <td>لأنك تكتب CSS داخل وسم <code>&lt;style&gt;</code> في <code>&lt;head&gt;</code>، وما تحتاج <code>style</code> داخل العنصر.</td>
+    </tr>
+    <tr>
+        <td>External</td>
+        <td><code>&lt;link&gt;</code> ❌</td>
+        <td>لأنك تربط ملف CSS خارجي باستخدام <code>&lt;link&gt;</code>، وما تحتاج <code>style</code> نهائياً.</td>
+    </tr>
+</table>
+<hr>
+<p>📌 الخلاصة: <code>style</code> تستخدم فقط في الطريقة الأولى (Inline)، أما الطريقتين الثانية والثالثة فـ <code>style</code> ما لها دخل فيها.</p>
     <h2>الخلاصة</h2>
     <p>يمكنك استخدام أي من الطرق الثلاثة لكتابة أكواد <strong>CSS</strong> حسب احتياجاتك وتفضيلاتك. الطريقة الأولى مناسبة للتغييرات السريعة والمحدودة، بينما الطريقة الثانية والثالثة مناسبة للمشاريع الكبيرة والمعقدة حيث يمكنك تنظيم الأكواد بشكل أفضل.</p>
     <hr>
